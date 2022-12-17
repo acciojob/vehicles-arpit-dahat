@@ -7,10 +7,7 @@ public class Car extends Vehicle {
     public Car(String name) {
         super(name);
     }
-
-    public class Car extends Vehicle {
         private int seats;
-
         public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
             //Hint: Car extends Vehicle
 
@@ -37,7 +34,7 @@ public class Car extends Vehicle {
             move(newSpeed,newDirection);
             System.out.println("changeSpeed method called - The speed is changed to: " + newSpeed + ", and the direction is changed to: " + newDirection + " degrees");
         }
-    }
+
 
     public int getWheels() {
         return wheels;
