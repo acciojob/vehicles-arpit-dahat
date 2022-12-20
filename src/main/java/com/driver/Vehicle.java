@@ -3,6 +3,8 @@ package com.driver;
  public class Vehicle {
 
      private int currentDirection;
+     int currentSpeed;
+     String name;
 
 
      public Vehicle(String name) {
@@ -15,6 +17,9 @@ package com.driver;
 
      public int getCurrentDirection() {
          return currentDirection;
+     }
+     public int getCurrentSpeed(){
+         return currentSpeed;
      }
 
      public void steer(int direction){
@@ -35,9 +40,10 @@ package com.driver;
     }
 
     public void stop(){
-
         this.currentSpeed  = 0;
-        System.out.println("stop method called - The vehicle is stopped");
+        if(currentSpeed == 0){
+            System.out.println("stop method called - The vehicle is stopped");
+        }
     }
 
 }
